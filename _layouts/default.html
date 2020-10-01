@@ -22,7 +22,6 @@
 			<script async src='https://www.google-analytics.com/analytics.js'></script>
 		{% endif %}
 	</head>
-
 	<body {% if page.text_width %}class="text-width"{% endif %}>
 		<div class="wrap">
 			<header>
@@ -31,8 +30,10 @@
 			</header>
 			{{ content }}
 			<footer>
-				Template by <a href="https://cloudcannon.com/">CloudCannon</a>
+		<!--		Template by <a href="https://cloudcannon.com/">CloudCannon</a> -->
 			</footer>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		{% include open-embed.html %}
 	</body>
 </html>

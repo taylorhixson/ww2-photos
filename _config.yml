@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Aperture Template
+title: 
 url: "https://cosmic-hippopotamus.cloudvent.net"
 baseurl:
 google_analytics_key:
@@ -11,7 +11,7 @@ logo: /siteicon.png
 description: Photography portfolio template for Jekyll.
 author:
   name:
-  email:
+  email: taylorhixson@gmail.com
   twitter: # twitter username without the @ symbol
 social:
   name: Aperture Template
