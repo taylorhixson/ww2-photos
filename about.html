@@ -1,12 +1,17 @@
 ---
 title: About
 ---
+<script src="https://cdn.podlove.org/web-player/5.x/embed.js"></script>
 
+<body>
 <div class="split-content">
 	<div class="side-content">
 		<div class="editable">
-			<p>Roy Hixson served in the South Pacific in the U.S. Navy during World War II. This project showcases the photos he took during that time.</p>
-		<audio src="/interviewEdit.mp3" controls loop> Unable to load song. </audio>
+			<p>Roy Hixson served in the South Pacific in the U.S. Navy during World War II. This project showcases the photos he took during that time.
+
+{% include open-embed.html src = "/interviewEdit.mp3"%}
+	</p>
+
 		</div>
 	</div>
 
@@ -14,3 +19,6 @@ title: About
 		<img src="{{ site.baseurl }}/images/roy.jpg" alt="Roy Hixson sitting in a chair on a ship deck, leg crossed" class="editable" height="400" width="400" />
 	</div>
 </div>
+<script src="https://cdn.plyr.io/2.0.15/plyr.js"></script>
+<script src="/js/plyr.js"></script>
+</body>

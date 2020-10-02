@@ -2,21 +2,23 @@
 
 <html lang="en">
 	<head>
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>About</title>
-<meta name="generator" content="Jekyll v3.7.2" />
+<title>About | Roy Hixson’s WW2</title>
+<meta name="generator" content="Jekyll v3.8.0" />
 <meta property="og:title" content="About" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Photography portfolio template for Jekyll." />
-<meta property="og:description" content="Photography portfolio template for Jekyll." />
+<meta name="description" content="A WW2 navy sailor’s photographs from the South Pacific" />
+<meta property="og:description" content="A WW2 navy sailor’s photographs from the South Pacific" />
 <link rel="canonical" href="http://localhost:4000/about/" />
 <meta property="og:url" content="http://localhost:4000/about/" />
+<meta property="og:site_name" content="Roy Hixson’s WW2" />
 <meta property="og:image" content="http://localhost:4000/uploads/1.jpg" />
 <script type="application/ld+json">
-{"name":"Aperture Template","description":"Photography portfolio template for Jekyll.","@type":"WebSite","url":"http://localhost:4000/about/","image":"http://localhost:4000/uploads/1.jpg","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/siteicon.png"}},"headline":"About","sameAs":["https://github.com/CloudCannon/aperture-jekyll-template"],"@context":"http://schema.org"}</script>
+{"name":"Aperture Template","description":"A WW2 navy sailor’s photographs from the South Pacific","@type":"WebSite","url":"http://localhost:4000/about/","image":"http://localhost:4000/uploads/1.jpg","headline":"About","sameAs":["https://github.com/CloudCannon/aperture-jekyll-template"],"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -25,13 +27,17 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="/images/favicon.png">
+		<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+
+
+
 
 		
 	</head>
 	<body class="text-width">
 		<div class="wrap">
 			<header>
-				<h1><a href="/">Aperture</a></h1>
+				<h1><a href="/">Roy Hixson's WW2</a></h1>
 				<nav>
 	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a>
 	
@@ -52,25 +58,21 @@
 	
 </nav>
 			</header>
-			<div class="split-content">
+			<script src="https://cdn.podlove.org/web-player/5.x/embed.js"></script>
+
+<body>
+<div class="split-content">
 	<div class="side-content">
 		<div class="editable">
-			<p>Roy Hixson served in the South Pacific in the U.S. Navy during World War II. This project showcases the photos he took during that time.</p>
-		<audio src="/interviewEdit.mp3" controls loop> Unable to load song. </audio>
-		</div>
-	</div>
+			<p>Roy Hixson served in the South Pacific in the U.S. Navy during World War II. This project showcases the photos he took during that time.
 
-	<div class="side-photo">
-		<img src="/images/roy.jpg" alt="Roy Hixson sitting in a chair on a ship deck, leg crossed" class="editable" height="400" width="400" />
-	</div>
-</div>
+# _include/embed-audio.html
+<audio controls>
+  <source src="/interviewEdit.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-			<footer>
-		<!--		Template by <a href="https://cloudcannon.com/">CloudCannon</a> -->
-			</footer>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<style>
+<style>
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.333%;
@@ -137,10 +139,10 @@ function video_embed() {
 }
 video_embed();
 
-function mp3_embed() {
+function wav_embed() {
     var p = document.getElementsByTagName('p');
     for(var i = 0; i < p.length; i++) {
-        if(p[i].innerHTML.indexOf('.mp3') !== -1) {
+        if(p[i].innerHTML.indexOf('.wav') !== -1) {
             var str = p[i].innerHTML.split('?');
             if(str.length == 1) str[1] = '';
             var str1 = str[1];
@@ -149,7 +151,7 @@ function mp3_embed() {
             str1 = str1.replace('loop=1','').replace('loop=0','');
             str1 = str1.replace('controls=0','').replace('controls=1','');
 
-            if (str[0].lastIndexOf('.mp3', str[0].length - 4) === str[0].length - 4 && str1.length == 0) {
+            if (str[0].lastIndexOf('.wav', str[0].length - 4) === str[0].length - 4 && str1.length == 0) {
                 if(str[1].indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
                 if(str[1].indexOf('loop=1') !== -1) var loop=1; else var loop=0;
                 if(str[1].indexOf('controls=0') !== -1) var controls=0; else var controls=1;
@@ -163,8 +165,26 @@ function mp3_embed() {
         }
     }
 }
-mp3_embed();
+wav_embed();
 </script>
+
+	</p>
+
+		</div>
+	</div>
+
+	<div class="side-photo">
+		<img src="/images/roy.jpg" alt="Roy Hixson sitting in a chair on a ship deck, leg crossed" class="editable" height="400" width="400" />
+	</div>
+</div>
+<script src="https://cdn.plyr.io/2.0.15/plyr.js"></script>
+<script src="/js/plyr.js"></script>
+</body>
+
+			<footer>
+		<!--		Template by <a href="https://cloudcannon.com/">CloudCannon</a> -->
+			</footer>
+		</div>
 
 	</body>
 </html>
