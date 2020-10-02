@@ -1,5 +1,5 @@
 body {
-
+	background: #111111;
 }
 
 .wrap {
@@ -8,7 +8,7 @@ body {
 
 header h1 a {
 	text-decoration: none;
-	color: $color;
+	color: #FFFFFF;
 }
 
 .text-width {
@@ -56,7 +56,7 @@ header h1 a {
 			transition: background .2s ease;
 
 			&:hover {
-				background: rgba(255,255,255,.3);
+				background: rgba(255, 255, 255, .4);
 			}
 		}
 	}
