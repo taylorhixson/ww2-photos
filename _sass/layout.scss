@@ -9,6 +9,13 @@ body {
 header h1 a {
 	text-decoration: none;
 	color: #FFFFFF;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+	animation: mymove 5s;
+
+}
+@keyframes mymove {
+  25% {letter-spacing: 5px;}
 }
 
 .text-width {
@@ -56,7 +63,8 @@ header h1 a {
 			transition: background .2s ease;
 
 			&:hover {
-				background: rgba(255, 255, 255, .4);
+				background: rgb(63,171,155);
+				background: linear-gradient(90deg, rgba(63,171,155,.4) 0%, rgba(208,230,208,.4) 28%, rgba(243,240,215,.4) 83%, rgba(216,179,132,.4) 100%);
 			}
 		}
 	}
