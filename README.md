@@ -1,3 +1,6 @@
+## About Roy Hixson's WW2 photos
+
+
 # Aperture
 
 Aperture template for Jekyll. Browse through a [live demo](https://cosmic-hippopotamus.cloudvent.net/).

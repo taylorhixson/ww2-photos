@@ -2,14 +2,14 @@
 # Site
 
 title: Roy Hixson's WW2
-url: "https://cosmic-hippopotamus.cloudvent.net"
+url: "https://royhixson.com"
 baseurl:
 google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: # /siteicon.png
 description: A WW2 navy sailor's photographs from the South Pacific
-author:
+author: Taylor Hixson
   name:
   email: taylorhixson@gmail.com
   twitter: # twitter username without the @ symbol
