@@ -9,7 +9,7 @@ google_analytics_key:
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: # /siteicon.png
 description: A WW2 navy sailor's photographs from the South Pacific
-author: Taylor Hixson
+author: 
   name:
   email: taylorhixson@gmail.com
   twitter: # twitter username without the @ symbol
